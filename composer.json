@@ -31,16 +31,16 @@
     },
     "autoload": {
         "psr-4": {
-          "IndustyArena\\CraftObjectStorage\\": "src/"
+          "IndustryArena\\CraftObjectStorage\\": "src/"
         }
     },
     "extra": {
         "name": "CraftObjectStorage",
         "handle": "craft-object-storage",
-        "developer": "IndustyArena",
-        "developerUrl": "https://IndustyArena.com",
+        "developer": "IndustryArena",
+        "developerUrl": "https://IndustryArena.com",
         "documentationUrl": "https://github.com/industryarena/craft-object-storage/blob/master/README.md",
         "changelogUrl": "https://raw.githubusercontent.com/industryarena/craft-object-storage/master/CHANGELOG.md",
-        "class": "IndustyArena\\CraftObjectStorage\\Plugin"
+        "class": "IndustryArena\\CraftObjectStorage\\Plugin"
     }
 }

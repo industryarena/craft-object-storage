@@ -1,6 +1,6 @@
 <?php
 
-namespace IndustyArena\CraftObjectStorage;
+namespace IndustryArena\CraftObjectStorage;
 
 use Craft;
 use Aws\S3\S3Client;
