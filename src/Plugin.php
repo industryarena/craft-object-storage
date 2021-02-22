@@ -16,8 +16,11 @@ class Plugin extends \craft\base\Plugin
     {
         parent::init();
 
-        // Event::on(Volumes::class, Volumes::EVENT_REGISTER_VOLUME_TYPES, function (RegisterComponentTypesEvent $event) {
-        //     $event->types[] = Volume::class;
-        // });
+        // var_dump(123);
+        // die;
+
+        Event::on(Volumes::class, Volumes::EVENT_REGISTER_VOLUME_TYPES, function (RegisterComponentTypesEvent $event) {
+            $event->types[] = Volume::class;
+        });
     }
 }

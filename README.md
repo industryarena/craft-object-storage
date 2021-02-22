@@ -4,10 +4,18 @@ Add any S3 storage make it easy.
 
 ## Install
 
-TODO:
-```bash
-echo start...
+Add to your .env config:
+```env
+STORAGE_BUCKET="Example"
+STORAGE_KEY=""
+STORAGE_SECRET=""
+STORAGE_ENDPOINT="https://storage.example.com"
+
+STORAGE_REGION=""
+STORAGE_USEPATHSTYLE="true"
 ```
+
+Create your asset via webinterface.
 
 
 ## License

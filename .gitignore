@@ -3,3 +3,4 @@
 /craft/storage/*
 !/craft/storage/rebrand
 vendor/
+.DS_Store

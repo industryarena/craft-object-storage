@@ -1,0 +1,76 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.autosuggestField({
+    label: "Bucket"|t('craft-object-storage'),
+    id: 'bucket',
+    name: 'bucket',
+    suggestEnvVars: true,
+    value: volume.bucket|default('$STORAGE_BUCKET'),
+    errors: volume.getErrors('bucket'),
+    required: true,
+    placeholder: "your-bucket-name"|t('craft-object-storage')
+}) }}
+
+{{ forms.autosuggestField({
+    label: "Access Key"|t('craft-object-storage'),
+    id: 'keyId',
+    name: 'keyId',
+    suggestEnvVars: true,
+    value: volume.keyId|default('$STORAGE_KEY'),
+    errors: volume.getErrors('keyId'),
+    required: true,
+}) }}
+
+{{ forms.autosuggestField({
+    label: "Access Secret"|t('craft-object-storage'),
+    id: 'secret',
+    name: 'secret',
+    suggestEnvVars: true,
+    value: volume.secret|default('$STORAGE_SECRET'),
+    errors: volume.getErrors('secret'),
+    required: true,
+}) }}
+
+{{ forms.autosuggestField({
+    label: "Endpoint"|t('craft-object-storage'),
+    id: 'endpoint',
+    name: 'endpoint',
+    suggestEnvVars: true,
+    value: volume.endpoint|default('$STORAGE_ENDPOINT'),
+    errors: volume.getErrors('endpoint'),
+    required: true,
+}) }}
+
+{{ forms.autosuggestField({
+    label: "Region"|t('craft-object-storage'),
+    id: 'region',
+    name: 'region',
+    suggestEnvVars: true,
+    value: volume.region|default('$STORAGE_REGION'),
+    errors: volume.getErrors('region'),
+    placeholder: "eu"|t('craft-object-storage')
+}) }}
+
+{{ forms.autosuggestField({
+    label: "Subfolder"|t('craft-object-storage'),
+    instructions: "If you want to use a bucket’s subfolder as a Volume, specify the path to use here."|t('craft-object-storage'),
+    id: 'subfolder',
+    class: 'ltr',
+    name: 'subfolder',
+    suggestEnvVars: true,
+    suggestAliases: true,
+    value: (volume is defined ? volume.subfolder : null),
+    errors: (volume is defined ? volume.getErrors('subfolder') : null),
+    required: false,
+    placeholder: "path/to/subfolder"|t('craft-object-storage')
+}) }}
+
+{{ forms.autosuggestField({
+    label: "Use path style"|t('craft-object-storage'),
+    id: 'usepathstyle',
+    name: 'usepathstyle',
+    suggestEnvVars: true,
+    value: volume.usepathstyle|default('$STORAGE_USEPATHSTYLE'),
+    errors: volume.getErrors('usepathstyle'),
+    placeholder: "Only the value 'true' works"|t('craft-object-storage')
+}) }}
