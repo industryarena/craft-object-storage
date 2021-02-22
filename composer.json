@@ -1,0 +1,45 @@
+{
+    "name": "industryarena/craft-object-storage",
+    "description": "Easily debug CraftCMS projects",
+    "type": "craft-plugin",
+    "keywords": [
+        "craft",
+        "craftcms",
+        "craft-plugin",
+        "assets",
+        "object",
+        "storage",
+        "s3",
+        "volumes"
+    ],
+    "support": {
+        "docs": "https://github.com/industryarena/craft-object-storage/blob/master/README.md",
+        "issues": "https://github.com/industryarena/craft-object-storage/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "IndustryArena",
+            "homepage": "https://industryarena.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^7.4|^8.0",
+        "craftcms/cms": "^3.0.0",
+        "league/flysystem-aws-s3-v3": "^2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "IndustyArena\\CraftObjectStorage\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "CraftObjectStorage",
+        "handle": "craft-object-storage",
+        "developer": "IndustyArena",
+        "developerUrl": "https://IndustyArena.com",
+        "documentationUrl": "https://github.com/industryarena/craft-object-storage/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/industryarena/craft-object-storage/master/CHANGELOG.md",
+        "class": "IndustyArena\\CraftObjectStorage\\Plugin"
+    }
+}
