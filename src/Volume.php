@@ -1,6 +1,6 @@
 <?php
 
-namespace IndustryArena\CraftObjectStorage;
+namespace industryarena\craftuniversalstorage;
 
 use Craft;
 use Aws\S3\S3Client;
@@ -99,7 +99,7 @@ class Volume extends FlysystemVolume
      */
     public function getSettingsHtml()
     {
-        return Craft::$app->getView()->renderTemplate('craft-object-storage/volumeSettings', [
+        return Craft::$app->getView()->renderTemplate('craft-universal-storage/volumeSettings', [
             'volume' => $this
         ]);
     }

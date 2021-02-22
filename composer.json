@@ -1,10 +1,11 @@
 {
-    "name": "industryarena/craft-object-storage",
-    "description": "Easily debug CraftCMS projects",
-    "version": "1.0.2",
+    "name": "industryarena/craft-universal-storage",
+    "description": "Universal S3 object storage for CraftCMS",
     "type": "craft-plugin",
+    "version": "1.0.3",
     "keywords": [
         "craft",
+        "cms",
         "craftcms",
         "craft-plugin",
         "assets",
@@ -14,33 +15,32 @@
         "volumes"
     ],
     "support": {
-        "docs": "https://github.com/industryarena/craft-object-storage/blob/master/README.md",
-        "issues": "https://github.com/industryarena/craft-object-storage/issues"
+        "docs": "https://github.com/industryarena/craft-universal-storage/blob/master/README.md",
+        "issues": "https://github.com/industryarena/craft-universal-storage/issues"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "IndustryArena",
-            "homepage": "https://industryarena.com"
+            "homepage": "https://industryarena.com/"
         }
     ],
     "require": {
-        "php": "^7.3|^7.4|^8.0",
         "craftcms/cms": "^3.0.0",
         "league/flysystem-aws-s3-v3": "^1.0.0"
     },
     "autoload": {
         "psr-4": {
-          "IndustryArena\\CraftObjectStorage\\": "src/"
+          "industryarena\\craftuniversalstorage\\": "src/"
         }
     },
     "extra": {
-        "name": "CraftObjectStorage",
-        "handle": "craft-object-storage",
+        "name": "Universal object storage",
+        "handle": "craft-universal-storage",
         "developer": "IndustryArena",
-        "developerUrl": "https://IndustryArena.com",
-        "documentationUrl": "https://github.com/industryarena/craft-object-storage/blob/master/README.md",
-        "changelogUrl": "https://raw.githubusercontent.com/industryarena/craft-object-storage/master/CHANGELOG.md",
-        "class": "IndustryArena\\CraftObjectStorage\\Plugin"
+        "developerUrl": "https://industryarena.com/",
+        "documentationUrl": "https://github.com/industryarena/craft-universal-storage/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/industryarena/craft-universal-storage/master/CHANGELOG.md",
+        "class": "industryarena\\craftuniversalstorage\\Craftuniversalstorage"
     }
 }
